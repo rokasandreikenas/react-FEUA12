@@ -7,3 +7,4 @@ React FEUA12
 - Komponentas visada prasideda Didžiają raide
 - JSX (JSX stands for JavaScript XML) - HTML in React (Javascript + HTML)
 - Eksportuojam komponentus su export default KomponentoPavadinimas
+- dažniausiai configai būna root (2_paskaita) folderyje

@@ -1,0 +1,9 @@
+.card-container {
+  border: 1px solid grey;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.card-container .description {
+  color: grey;
+}
