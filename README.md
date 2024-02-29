@@ -3,8 +3,11 @@
 React FEUA12
 
 - Kaip susikurti react projektą su Vite https://vitejs.dev/guide/#scaffolding-your-first-vite-project <br/>
-- Komponento pavadinimas turi atitikti failo pavadinimą
-- Komponentas visada prasideda Didžiają raide
-- JSX (JSX stands for JavaScript XML) - HTML in React (Javascript + HTML)
-- Eksportuojam komponentus su export default KomponentoPavadinimas
-- dažniausiai configai būna root (2_paskaita) folderyje
+- Komponento pavadinimas turi atitikti failo pavadinimą <br/>
+- Komponentas visada prasideda Didžiają raide <br/>
+- JSX (JSX stands for JavaScript XML) - HTML in React (Javascript + HTML) <br/>
+- Eksportuojam komponentus su export default KomponentoPavadinimas <br/>
+- dažniausiai configai būna root (2_paskaita) folderyje <br/>
+- ES7+ React/Redux/React-Native snippets ir rafce komanda <br/>
+- <> </> - empty tag <br/>
+- children prop - <Button>Title</Button> <br/>
