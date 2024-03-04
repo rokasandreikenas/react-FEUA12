@@ -11,3 +11,5 @@ React FEUA12
 - ES7+ React/Redux/React-Native snippets ir rafce komanda <br/>
 - <> </> - empty tag <br/>
 - children prop - <Button>Title</Button> <br/>
+- import PropTypes from "prop-types"; <br/>
+- Hero.propTypes = {title: PropTypes.string.isRequired, subtitle: PropTypes.string, color: PropTypes.string}; <br/>
