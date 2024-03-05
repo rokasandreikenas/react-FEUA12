@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 const UserCard = ({ user, notificationCount = 0 }) => {
   // user = {name: "Rokas", surname: "Andreikenas", age: 25}
   // notificationCount = 8
+
   return (
     <div>
       {user.name}
