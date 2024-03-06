@@ -27,8 +27,52 @@ const App = () => {
 
   const vacationDays = 7;
 
+  const users = [
+    { name: "Rokas", surname: "Andreikenas", vacationDays: 7 },
+    { name: "Tomas", surname: "Andreikenas", vacationDays: -5 },
+    { name: "Rimas", surname: "Andreikenas", vacationDays: 20 },
+    { surname: "Andreikenas", vacationDays: 7 },
+  ];
+
+  const namesBlock = users.map((user, index) => (
+    <li key={index}>
+      {index}.{user.name}
+    </li>
+  ));
+
+  // map returns a new array with the results of the function,
+  // while forEach does not return anything and only modifies the original array
+  const names = users.map((user) => user.name); // ['Rokas']
+  const namesV2 = users.forEach((user) => user.name); // undefined
+  console.log(names);
+  console.log(namesV2);
+  const fruits = ["Apple", "Banana", "Kiwi", "Apple"];
+
+  const getNames = () => {
+    const names = [];
+
+    users.forEach((user) => user.name && names.push(user.name));
+
+    return names;
+  };
+
   return (
     <div>
+      <p>Shopping list:</p>
+      <ol>
+        {fruits.map((fruit, index) => (
+          <li key={`${fruit}_${index}`}>{fruit}</li>
+        ))}
+      </ol>
+
+      <ul>{namesBlock}</ul>
+      <ul>
+        {users.map((user) => (
+          <li key={user.name}>{user.name}</li>
+        ))}
+      </ul>
+      <br />
+      <br />
       {isShortName}
       <br />
       {checkIsShortName()}
@@ -46,8 +90,16 @@ const App = () => {
       <VacationBox name="Tadukas" count={-2} />
       <VacationBox name={name} count={vacationDays} />
       <VacationBox name="Rimas" count={24} />
-
       <VacationBox count={4} />
+      <br />
+      <br />
+      {users.map((user) => (
+        <VacationBox
+          key={`${user.name} ${user.surname}`}
+          name={`${user.name || ""} ${user.surname}`}
+          count={user.vacationDays}
+        />
+      ))}
     </div>
   );
 };
