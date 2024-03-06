@@ -13,3 +13,4 @@ React FEUA12
 - children prop - <Button>Title</Button> <br/>
 - import PropTypes from "prop-types"; <br/>
 - Hero.propTypes = {title: PropTypes.string.isRequired, subtitle: PropTypes.string, color: PropTypes.string}; <br/>
+- Ternary išraiškos ? : if else; && if
