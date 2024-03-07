@@ -1,0 +1,28 @@
+.card {
+  border: 2px solid red;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.userImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.userInfo {
+  padding: 16px;
+}
+
+.userInfo h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.userInfo p {
+  margin: 4px 0;
+  font-size: 16px;
+  color: #666;
+}

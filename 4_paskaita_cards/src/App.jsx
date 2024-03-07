@@ -1,5 +1,6 @@
-import ProductCard from "./components/ProductCard/ProductCard";
+import { ProductCard, UserCard, Hero } from "./components";
 import "./App.css";
+
 const App = () => {
   const products = [
     {
@@ -29,10 +30,26 @@ const App = () => {
   ];
 
   return (
-    <div className="product-list">
-      {products.map((product) => (
-        <ProductCard key={product.id} product={product} />
-      ))}
+    <div>
+      <div className="product-list">
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+        <br />
+        <UserCard
+          user={{
+            id: 1,
+            name: "Rokas",
+            surname: "Andreikenas",
+            image:
+              "https://cdn4.iconfinder.com/data/icons/people-14/24/Female-2-512.png",
+          }}
+        />
+      </div>
+
+      <Hero title="Info" subtitle="Sub title" />
+      <br />
+      <Hero title="Info" />
     </div>
   );
 };

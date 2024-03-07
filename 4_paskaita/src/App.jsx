@@ -32,6 +32,7 @@ const App = () => {
     { name: "Tomas", surname: "Andreikenas", vacationDays: -5 },
     { name: "Rimas", surname: "Andreikenas", vacationDays: 20 },
     { surname: "Andreikenas", vacationDays: 7 },
+    { name: "Tadas", surname: "Andreikenas", vacationDays: 0 },
   ];
 
   const namesBlock = users.map((user, index) => (
