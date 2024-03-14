@@ -14,7 +14,7 @@ const Todos = () => {
         setTodos(response);
       })
       .catch((error) => console.error(error));
-  }, []);
+  }, []); // [] - dependency array
 
   // leidžiamas kiekvieno rerenderio metu. kai dependency masyvo nėra (retai sutinkamas)
   useEffect(() => {});
