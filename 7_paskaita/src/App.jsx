@@ -5,6 +5,7 @@ import "./App.css";
 // onMouseOver - užvedus pelyte
 // onMouseLeave - patraukus pelyte
 // onChange - kai pasikeičia įvestas tekstas
+// onSubmit - kai formą submitinama
 
 const App = () => {
   const [hovering, setHovering] = useState(false);

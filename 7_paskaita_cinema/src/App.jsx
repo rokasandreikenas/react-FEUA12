@@ -16,6 +16,27 @@ const App = () => {
     // setViewers([viewer, ...viewers, ]); // [viewer, string]
   };
 
+  // BY VALUE
+  // const handleRemoveViewer = (viewer) => {
+  //   setViewers((prevValue) =>
+  //     prevValue.filter((prevViever) => prevViever !== viewer)
+  //   );
+
+  //   // filter logika
+  //   // a
+  //   // [a, b]
+  //   // a !== a => false - negrazina
+  //   // a !== b => true - grazina
+  //   // [b]
+  //   console.log(viewer);
+  // };
+
+  // BY INDEX
+  const handleRemoveViewer = (index) => {
+    // _ - underscore can help you to skip unused value
+    setViewers((prevValue) => prevValue.filter((_, idx) => idx !== index));
+  };
+
   return (
     <div className={styles.container}>
       <h1 className={styles.header}>Forum Cinemas</h1>
@@ -38,9 +59,15 @@ const App = () => {
         </button>
       </form>
       <ul className={styles.list}>
-        {viewers.map((viewer) => (
-          <li key={viewer} className={styles.listItem}>
+        {viewers.map((viewer, index) => (
+          <li key={`${viewer}_${index}`} className={styles.listItem}>
             {viewer}
+            <button
+              onClick={() => handleRemoveViewer(index)}
+              className={styles.removeButton}
+            >
+              Pašalinti
+            </button>
           </li>
         ))}
       </ul>
