@@ -14,4 +14,5 @@ React FEUA12
 - import PropTypes from "prop-types"; <br/>
 - Hero.propTypes = {title: PropTypes.string.isRequired, subtitle: PropTypes.string, color: PropTypes.string}; <br/>
 - Ternary išraiškos ? : if else; && if <br/>
-- const [count, setCount] = useState(0); - count yra state (kintamasis), setCount yra setState (updateris)
+- const [count, setCount] = useState(0); - count yra state (kintamasis), setCount yra setState (updateris) <br/>
+- https://www.npmjs.com/package/react-spinners <br/>
