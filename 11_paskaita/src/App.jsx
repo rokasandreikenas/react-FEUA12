@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { UserProvider } from "./contexts/UserContext";
 import BasicLayout from "./layouts/BasicLayout";
 import Topbar from "./components/Topbar";
-import { UserProvider } from "./contexts/UserContext";
+import Home from "./pages/Home";
+import Users from "./pages/Users";
 
 const App = () => {
   return (
@@ -16,6 +17,14 @@ const App = () => {
             element={
               <BasicLayout>
                 <Home />
+              </BasicLayout>
+            }
+          />
+          <Route
+            path="/users"
+            element={
+              <BasicLayout>
+                <Users />
               </BasicLayout>
             }
           />

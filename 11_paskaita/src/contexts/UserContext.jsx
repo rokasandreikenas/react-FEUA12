@@ -1,10 +1,15 @@
 import { createContext, useState } from "react";
 import PropTypes from "prop-types";
 
-const UserContext = createContext();
+const UserContext = createContext({
+  user: {},
+  isLoggedIn: false,
+  handleLogin: () => {},
+  handleLogOut: () => {},
+}); // sukuriamas context su default type values
 
 const UserProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(null); // pradine reiksmšmė yra null, nes useris yra atjungtas
 
   const isLoggedIn = !!user; // null arba {...} => true arba false
 

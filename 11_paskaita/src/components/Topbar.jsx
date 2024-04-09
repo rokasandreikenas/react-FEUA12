@@ -23,8 +23,9 @@ const Topbar = () => {
       }}
     >
       <h2>LOGO</h2>
-      <nav>
+      <nav style={{ display: "flex", gap: 24 }}>
         <Link to="/">Home</Link>
+        <Link to="/users">Users</Link>
       </nav>
       <div>
         Hello, {isLoggedIn ? user.name : "stranger"}. how are you?{" "}

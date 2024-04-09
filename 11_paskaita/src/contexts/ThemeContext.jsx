@@ -3,7 +3,10 @@ import PropTypes from "prop-types";
 
 // export const ThemeContext = createContext(); // another way to export
 
-const ThemeContext = createContext(); // sukuriam context instance
+const ThemeContext = createContext({
+  darkMode: false,
+  toggleDarkMode: () => {},
+}); // sukuriam context instance
 
 const ThemeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);
@@ -13,6 +16,7 @@ const ThemeProvider = ({ children }) => {
   };
 
   // value = {darkMode: false, toggleDarkMode: () => void}
+  // viską ką atiduodam į value, galime pasiekti per useContext
   return (
     <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
       {children}
