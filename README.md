@@ -16,3 +16,4 @@ React FEUA12
 - Ternary išraiškos ? : if else; && if <br/>
 - const [count, setCount] = useState(0); - count yra state (kintamasis), setCount yra setState (updateris) <br/>
 - https://www.npmjs.com/package/react-spinners <br/>
+- npm (package-lock.json) vs yarn (yarn.lock) vs pnpm <br/>
