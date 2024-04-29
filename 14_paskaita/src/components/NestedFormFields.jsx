@@ -7,7 +7,7 @@ const NestedFormFields = () => {
   //   console.log(meta); // {value: {…}, error: undefined, touched: true, initialValue: {…}, initialTouched: false, …}
   //   console.log(helpers); // {setValue: ƒ, setTouched: ƒ, setError: ƒ}
 
-  const { values, isSubmitting } = useFormikContext();
+  const { values, isSubmitting, setFieldValue } = useFormikContext();
   console.log(values);
 
   const address = field.value;
